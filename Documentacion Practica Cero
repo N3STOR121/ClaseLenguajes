@@ -1,0 +1,40 @@
+Descripción del Proyecto
+Este proyecto consiste en controlar el LED interno de una Raspberry Pi Pico utilizando el lenguaje de programación C++ y el entorno de desarrollo de Arduino. El LED interno se encenderá y apagará alternativamente con un intervalo de tiempo específico.
+
+Requisitos del Hardware
+Raspberry Pi Pico
+Cable USB para conectar la Raspberry Pi Pico a una computadora
+Computadora con el entorno de desarrollo de Arduino instalado
+Configuración del Hardware
+Conecta la Raspberry Pi Pico a la computadora utilizando el cable USB.
+Instalación del Entorno de Desarrollo
+Descarga e instala el entorno de desarrollo de Arduino desde el sitio web oficial: Arduino IDE.
+Configuración del Entorno de Desarrollo
+Abre el entorno de desarrollo de Arduino.
+
+Ve a Archivo > Preferencias y en el campo "Gestor de URLs Adicionales de Tarjetas", agrega la siguiente URL: https://github.com/raspberrypi/pico-arduino/releases/download/global/package_rp2040_index.json.
+
+Ve a Herramientas > Placa > Gestor de tarjetas....
+
+Busca "Raspberry Pi RP2040" en el gestor de tarjetas, e instálalo.
+
+Selecciona la placa "Raspberry Pi Pico" desde Herramientas > Placa.
+
+Selecciona el puerto correcto de la Raspberry Pi Pico desde Herramientas > Puerto.
+
+Codigo Fuente
+void setup() {
+    // Configurar el LED interno como salida
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    // Encender el LED interno
+    digitalWrite(LED_BUILTIN, HIGH);
+    // Esperar 500 milisegundos
+    delay(500);
+    // Apagar el LED interno
+    digitalWrite(LED_BUILTIN, LOW);
+    // Esperar 500 milisegundos
+    delay(500);
+}
