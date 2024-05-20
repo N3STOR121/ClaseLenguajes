@@ -1,0 +1,22 @@
+Descripción del Proyecto
+Este proyecto consiste en desarrollar una aplicación de escritorio en C# que permita controlar una Raspberry Pi a través de conexión serial. La aplicación proporciona tres funcionalidades principales: resetear la Raspberry Pi, enviar un mensaje y desconectar el puerto serial.
+
+Configuración del Proyecto
+Crea un nuevo proyecto en Visual Studio y selecciona "Windows Forms App (.NET Framework)" como tipo de proyecto.
+
+Agrega los elementos necesarios al formulario de Windows Forms:
+
+Tres botones para las funcionalidades de resetear la Raspberry Pi, enviar un mensaje y desconectar el puerto serial.
+Un ComboBox para seleccionar el puerto serial.
+Un TextBox para ingresar el mensaje a enviar.
+
+Ejecución del Proyecto
+Compila y ejecuta la aplicación en Visual Studio.
+
+Selecciona el puerto serial deseado en el ComboBox.
+
+Haz clic en el primer botón para establecer la conexión con la Raspberry Pi.
+
+Puedes enviar un mensaje utilizando el segundo botón.
+
+Si deseas desconectar la Raspberry Pi, haz clic en el tercer botón.
