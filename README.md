@@ -22,5 +22,6 @@
 
 #### NOMBRE Y MATRÍCULA:
 #### Bonilla Castañeda Nestor Miguel - 21211920
+#### Sotelo Rubio Rodrigo
 
 </div>
